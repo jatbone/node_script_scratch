@@ -1,0 +1,20 @@
+{
+  "name": "node-script",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d dist",
+    "dev": "babel -w src -d dist & nodemon ./dist/index.js --number=99 --watch"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.5",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.21.5",
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "yargs": "^16.2.0"
+  }
+}
