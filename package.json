@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "babel src -d dist",
-    "dev": "babel -w src -d dist & nodemon ./dist/index.js --number=99 --watch"
+    "build:w": "babel -w src -d dist",
+    "dev": "nodemon ./dist/index.js --number=99 --watch"
   },
   "devDependencies": {
     "@babel/cli": "^7.21.5",
